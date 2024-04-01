@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index.css">
+   <title>Toggle button</title>
+</head>
+<body>
+   <label class="btn">
+      <input type="checkbox" hidden>
+      <span class="slider"></span>
+   </label>
+   <div class="text">
+      <center>
+         <h1>CODER'S CIRCLE</h1>
+         <h2>LIKE AND SUBSCRIBE</h2>
+         <h3>LIGHT MODE AND DARK MODE DESGIN</h3>
+      </center>
+   </div>
+</body>
+<!-- JAVASCRIPT CODE FOR LIGHT CHANGE -->
+<script>
+   var btn = document.querySelector('.slider');
+   var body = document.querySelector('body');
+   flag = 0;
+   btn.addEventListener('click', function(){
+      if(flag == 0)
+      {
+         body.style.backgroundColor = 'black';
+         body.style.color = 'white';
+         flag = 1;
+      }
+      else
+      {
+         body.style.backgroundColor = 'white';
+         body.style.color = 'black';
+         flag = 0;
+      }
+   })
+</script>
+
+</html>
